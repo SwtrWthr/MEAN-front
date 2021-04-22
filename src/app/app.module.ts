@@ -4,13 +4,24 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { RouterModule, Routes } from '@angular/router';
+import { BookComponent } from './components/book/book.component'
+
+const routes: Routes = [
+  {
+    path: '',
+    component: BookComponent
+  }
+];
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    BookComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(routes),
   ],
   providers: [],
   bootstrap: [AppComponent]
