@@ -1,0 +1,17 @@
+.header--inner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.header--navbar {
+  border-radius: 7px;
+  width: 95%;
+  height: 50px;
+  color: #bbd8c0;
+  background-color: #B46617;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  display: flex;
+}

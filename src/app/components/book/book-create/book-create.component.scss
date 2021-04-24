@@ -1,0 +1,40 @@
+.book-create__modal {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: radial-gradient(circle, rgba(88, 111, 124, 1) 2%, rgba(47, 69, 80, 1) 58%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-name: book-create__modal;
+  animation-duration: 0.5s;
+
+  @keyframes book-create__modal {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+.book-create--inner__modal {
+  width: 60%;
+  background: linear-gradient(90deg, rgba(74, 102, 117, 1) 0%, rgba(116, 152, 170, 1) 100%);
+  padding: 20px;
+  border-radius: 10px;
+
+  .form-control {
+    background-color: #e7e7e7;
+    outline: none;
+    border: none;
+
+    &:focus {
+      box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    }
+  }
+}
