@@ -45,4 +45,5 @@
 <app-book-create
   *ngIf="dialog"
   (canceled)="dialog=false"
+  (clicked)="created()"
 ></app-book-create>
